@@ -1,0 +1,33 @@
+{
+  "name": "bb-plugin-open-at-reply",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.46",
+    "bbPluginSdk": ">=0.6.49"
+  },
+  "bb": {
+    "name": "Open At Reply",
+    "description": "Opens unread threads at the start of the latest agent reply, so you read it from the top without scrolling up.",
+    "branding": {
+      "icon": "ArrowUpToLine"
+    },
+    "server": "./server.ts",
+    "app": "./app.tsx",
+    "skills": []
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.49",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.7.0"
+  },
+  "description": "Opens unread bb threads at the start of the latest agent reply, not at the end.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "bb plugin build",
+    "test": "node --test src/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  }
+}
