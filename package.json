@@ -24,6 +24,11 @@
   },
   "description": "Opens unread bb threads at the start of the latest agent reply, not at the end.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kr3t3n/bb-plugin-open-at-reply.git"
+  },
+  "homepage": "https://github.com/kr3t3n/bb-plugin-open-at-reply#readme",
   "private": true,
   "scripts": {
     "build": "bb plugin build",
